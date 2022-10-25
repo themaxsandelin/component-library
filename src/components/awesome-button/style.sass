@@ -1,0 +1,46 @@
+.button
+  font-family: 'Helvetica Neue', sans-serif
+  font-weight: 400
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  border: 0
+  border-radius: 8px
+  cursor: pointer
+  transition: background 0.2s ease
+
+  &__primary
+    background: $color-primary
+    color: $color-white
+
+    &:hover
+      background: $color-primary-shade
+
+  &__secondary
+    background: $color-secondary
+    color: $color-white
+
+    &:hover
+      background: $color-secondary-shade
+
+  &__danger
+    background: $color-danger
+    color: $color-white
+
+    &:hover
+      background: $color-danger-shade
+
+  &__size-s
+    font-size: 14px
+    line-height: 20px
+    padding: $spacing-xs $spacing-m
+
+  &__size-m
+    font-size: 16px
+    line-height: 22px
+    padding: $spacing-s $spacing-l
+
+  &__size-l
+    font-size: 18px
+    line-height: 24px
+    padding: $spacing-m $spacing-l
