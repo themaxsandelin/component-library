@@ -2,7 +2,7 @@
 import { ButtonHTMLAttributes } from 'react';
 
 // Hooks
-import { useTheme } from '@lib/core/ThemeProvider';
+import { useTheme } from '../../core/ThemeProvider';
 
 // Styles
 import * as styles from './Button.css';
