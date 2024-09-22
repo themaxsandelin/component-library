@@ -3,8 +3,25 @@
   "version": "1.0.0",
   "description": "",
   "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/main.js",
+  "module": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/main.js",
+      "types": "./dist/main.d.ts"
+    },
+    "./styles.css": {
+      "import": "./dist/styles.css"
+    }
+  },
   "scripts": {
-    "playground": "vite"
+    "playground": "vite",
+    "build": "rimraf dist && rollup -c"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^26.0.1",
