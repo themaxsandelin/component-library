@@ -61,7 +61,11 @@ export default [
         tsconfig: "tsconfig.build.json"
       }),
       vanillaExtractPlugin(),
-      terser(),
+      terser({
+        format: {
+          preamble: '\'use client\';',
+        }
+      }),
       bundleCssEmits()
     ],
     output: [
@@ -79,12 +83,12 @@ export default [
 
     ]
   },
-  // {
-  //   input: "dist/types/main.d.ts",
-  //   output: [{ file: "dist/main.d.ts", format: "esm" }],
-  //   plugins: [dts()],
-  //   watch: {
-  //     buildDelay: 500
-  //   }
-  // }
+  {
+    input: "dist/types/main.d.ts",
+    output: [{ file: "dist/main.d.ts", format: "esm" }],
+    plugins: [dts()],
+    watch: {
+      buildDelay: 500
+    }
+  }
 ];

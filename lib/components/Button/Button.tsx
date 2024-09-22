@@ -8,9 +8,7 @@ import { useTheme } from '../../core/ThemeProvider';
 import * as styles from './Button.css';
 import { ButtonVariants } from './Button.css';
 
-export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & ButtonVariants & {
-  
-}
+export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & ButtonVariants;
 
 export default function Button({ variant, size, children, ...props }: ButtonProps) {
   const { theme } = useTheme();
