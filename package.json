@@ -7,14 +7,9 @@
   "files": [
     "dist"
   ],
-  "main": "dist/main.js",
-  "module": "dist/main.js",
-  "types": "dist/main.d.ts",
+  "module": "./dist/main.js",
+  "types": "./dist/main.d.ts",
   "exports": {
-    ".": {
-      "import": "./dist/main.js",
-      "types": "./dist/main.d.ts"
-    },
     "./styles.css": {
       "import": "./dist/styles.css"
     }
