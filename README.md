@@ -1,12 +1,11 @@
 # React component library example
 
-What we'll be doing in this video:
-- Using Cursor as our text editor
-- Create a setup for a component library built with React
-    - Use Vite for the playground where we build our components
-    - Use rollup to build our library
-    - Use Vanilla Extract for our CSS with the power of TypeScript
-- Create a button component using a design from Figma
-- Build support for themes (dark and light mode)
-- Install the library in a Next.js app from a repository
-- Demonstrate symlink and how to test and build locally
+## What we'll be doing in this video:
+- Create an Icon component with multiple icon variants that supports color and className as props
+- Write a script for processing SVGs into React components
+- Write a script for generating an export file for all icon components
+- Write a script for re-writing the icon components in the case of adding new props
+
+## Dependencies we'll be installing:
+- tsx for running TypeScript files
+- node-html-parser for parsing our SVG files
