@@ -1,11 +1,5 @@
-# React component library example
+# React component library
 
-## What we'll be doing in this video:
-- Create an Icon component with multiple icon variants that supports color and className as props
-- Write a script for processing SVGs into React components
-- Write a script for generating an export file for all icon components
-- Write a script for re-writing the icon components in the case of adding new props
+This component library is built for the purpose of learning and experimentation through YouTube videos.
 
-## Dependencies we'll be installing:
-- tsx for running TypeScript files
-- node-html-parser for parsing our SVG files
+The first video in the series is available [here](https://www.youtube.com/watch?v=cuRApANH5cQ), and has it's own branch in the repository with a copy of the exact code from the video. The name of the branch is `feature/base-setup`.
