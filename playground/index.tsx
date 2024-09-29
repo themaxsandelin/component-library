@@ -1,17 +1,24 @@
 // Dependencies
+import { createRef, useEffect } from 'react';
 import { useTheme, ThemeSetting } from '@lib/main';
 import { Button } from '@lib/main';
+import { IconAffiliate } from '@lib/icons';
 
 // Styles
 import * as styles from './index.css';
 
 export default function Page() {
   const { theme, themeSetting, setThemeSetting } = useTheme();
+  const iconRef = createRef<SVGSVGElement>();
 
   function handleChangeThemeSetting(themeSetting: ThemeSetting) {
     console.log('Change theme setting to', themeSetting);
     setThemeSetting(themeSetting);
   }
+
+  useEffect(() => {
+    console.log(iconRef.current);
+  }, [iconRef.current]);
 
   return (
     <div className={styles.Page({ theme })}>
@@ -21,6 +28,7 @@ export default function Page() {
         <option value="dark">Dark</option>
       </select>
       <Button variant="primary" size="large">Button</Button>
+      <IconAffiliate ref={iconRef} />
     </div>
   );
 }

@@ -22,7 +22,10 @@
   "scripts": {
     "playground": "vite",
     "build": "rimraf dist && rollup -c",
-    "dev": "rollup -c -w"
+    "dev": "rollup -c -w",
+    "icon-converter": "tsx lib/scripts/icon-converter/icon-converter.ts",
+    "generate-icon-exports": "tsx lib/scripts/generate-icon-exports/generate-icon-exports.ts",
+    "process-icons": "tsx lib/scripts/process-icons/process-icons.ts"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^26.0.1",
@@ -36,13 +39,18 @@
     "@vanilla-extract/rollup-plugin": "^1.3.9",
     "@vanilla-extract/vite-plugin": "^4.0.15",
     "@vitejs/plugin-react": "^4.3.1",
+    "node-html-parser": "^6.1.13",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "rimraf": "^6.0.1",
     "rollup": "^4.22.4",
     "rollup-plugin-dts": "^6.1.1",
     "tslib": "^2.7.0",
+    "tsx": "^4.19.1",
     "typescript": "^5.6.2",
     "vite": "^5.4.7"
+  },
+  "dependencies": {
+    "@types/node": "^22.7.4"
   }
 }
